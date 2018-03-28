@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cricket</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resources.qrc">
+    <normaloff>:/logo/Logo.png</normaloff>:/logo/Logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0" colspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>Your Selections</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Batsman (BAT)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>##</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Wicket-Keeper (WK)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>##</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Bowler (BOW)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>##</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Allrounders (AR)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>##</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Points Available&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>####</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Points Used&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>####</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QRadioButton" name="radioButton">
+               <property name="text">
+                <string>BAT</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_2">
+               <property name="text">
+                <string>BOW</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_3">
+               <property name="text">
+                <string>AR</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="radioButton_4">
+               <property name="text">
+                <string>WK</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QListView" name="listView"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Team Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>Displayed Here</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Maximum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>18</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QListView" name="listView_2"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_13</zorder>
+   <zorder>label_10</zorder>
+   <zorder>frame</zorder>
+   <zorder>frame_2</zorder>
+   <zorder>label_16</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuManage_Teams">
+    <property name="title">
+     <string>Manage Teams</string>
+    </property>
+    <addaction name="actionNEW_TEam"/>
+    <addaction name="actionOPEN_Team"/>
+    <addaction name="actionSAVE_Team"/>
+    <addaction name="actionEVALUATE_Team"/>
+   </widget>
+   <addaction name="menuManage_Teams"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNEW_TEam">
+   <property name="text">
+    <string>NEW Team</string>
+   </property>
+   <property name="toolTip">
+    <string>Create New Team</string>
+   </property>
+  </action>
+  <action name="actionOPEN_Team">
+   <property name="text">
+    <string>OPEN Team</string>
+   </property>
+   <property name="toolTip">
+    <string>Open an Existing Team</string>
+   </property>
+  </action>
+  <action name="actionSAVE_Team">
+   <property name="text">
+    <string>SAVE Team</string>
+   </property>
+   <property name="toolTip">
+    <string>Save your Team</string>
+   </property>
+  </action>
+  <action name="actionEVALUATE_Team">
+   <property name="text">
+    <string>EVALUATE Team</string>
+   </property>
+   <property name="toolTip">
+    <string>Evaluate Team Performance</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+  <include location="Desktop/Internshala Project/Resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>radioButton</sender>
+   <signal>clicked()</signal>
+   <receiver>listView</receiver>
+   <slot>doItemsLayout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>144</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>listView</receiver>
+   <slot>doItemsLayout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>134</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>134</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>listView</receiver>
+   <slot>doItemsLayout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>215</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>listView</receiver>
+   <slot>clearSelection()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>317</x>
+     <y>179</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>label_16</sender>
+   <signal>linkActivated(QString)</signal>
+   <receiver>label_2</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>407</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>listView</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>listView_2</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>239</x>
+     <y>313</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>528</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionNEW_TEam</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>repaint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOPEN_Team</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>repaint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSAVE_Team</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>repaint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEVALUATE_Team</sender>
+   <signal>activated()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>repaint()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
