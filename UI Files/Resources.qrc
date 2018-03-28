@@ -1,8 +1,0 @@
-<RCC>
-  <qresource prefix="logo">
-    <file>Logo.png</file>
-  </qresource>
-  <qresource prefix="cross">
-    <file>delete-156119_640.png</file>
-  </qresource>
-</RCC>
